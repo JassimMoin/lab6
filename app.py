@@ -36,6 +36,8 @@ def add_contact():
             type=form.type.data
         )
         try:
+            #db.session.add(contact)
+            #db.session.commit()
             db.session.add(contact)
             db.session.commit()
             flash('Contact added successfully!', 'success')
